@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Quais animais de estimações você tem?"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_cao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cão"
+        app:layout_constraintStart_toStartOf="@+id/text_frase"
+        app:layout_constraintTop_toBottomOf="@+id/text_frase" />
+
+    <CheckBox
+        android:id="@+id/checkBox_gato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Gato"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_cao"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_cao" />
+
+    <CheckBox
+        android:id="@+id/checkBox_papagaio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Papagaio"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_gato"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_gato" />
+
+    <Button
+        android:id="@+id/button_mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Mostar"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_papagaio"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_papagaio" />
+
+    <TextView
+        android:id="@+id/text_mostar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:text="Mostar..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_mostrar" />
+</android.support.constraint.ConstraintLayout>
